@@ -94,7 +94,7 @@ Use this IP to access the application.
 
 ---
 
-## 📊 Monitoring Strategy
+##  Monitoring Strategy
 
 ### Option 1: Manual Curl Logs
 
@@ -115,7 +115,7 @@ You should see ~16 logs in v1 and ~4 in v2 if the split is 80/20.
 
 ---
 
-## 🧠 Canary Deployment Strategy
+##  Canary Deployment Strategy
 
 ### Initial Setup
 
@@ -150,7 +150,7 @@ subsets:
 
 ---
 
-## ✅ Promotion Criteria
+##  Promotion Criteria
 
 Promote v2 only if:
 
@@ -169,7 +169,7 @@ To promote, change weight to 100% for v2:
 
 ---
 
-## ❌ Rollback Plan
+##  Rollback Plan
 
 If performance issues are detected in v2:
 
@@ -186,9 +186,9 @@ If performance issues are detected in v2:
 
 ---
 
-## ✅ Deliverables
+##  Deliverables
 
-- ✅ K3s deployment YAMLs (`deployment-v1.yaml`, `deployment-v2.yaml`)
-- ✅ Istio configuration files (`gateway.yaml`, `destination-rule.yaml`, `virtual-service.yaml`)
-- ✅ Canary Deployment Strategy (this `README.md`)
-- ✅ Monitoring steps (logs or metrics via curl, Prometheus/Grafana)
+-  K3s deployment YAMLs (`deployment-v1.yaml`, `deployment-v2.yaml`)
+-  Istio configuration files (`gateway.yaml`, `destination-rule.yaml`, `virtual-service.yaml`)
+-  Canary Deployment Strategy (this `README.md`)
+-  Monitoring steps (logs or metrics via curl, Prometheus/Grafana)
