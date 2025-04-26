@@ -1,0 +1,12 @@
+groups:
+  - name: nginx-down-alert
+    rules:
+      - alert: NGINXDown
+        expr: up{job="nginx", instance="host.docker.internal:8080"} == 0
+        for: 15s
+        labels:
+          severity: critical
+        annotations:
+          summary: "NGINX is down"
+          description: "The NGINX service is not responding"
+

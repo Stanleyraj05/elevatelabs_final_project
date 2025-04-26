@@ -1,0 +1,8 @@
+- name: Restart NGINX if down
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Restart NGINX
+      service:
+        name: nginx
+        state: restarted
